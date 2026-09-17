@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-McpBasicsApplication<mcp-basics>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.ailearning.aiengineering.mcpbasics.McpBasicsApplication",
+            "projectName": "mcp-basics",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
