@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: mcp-basics
+  ai:
+    mcp:
+      server:
+        name: mcp-basics-server
+        version: 0.0.1
+        protocol: STREAMABLE
