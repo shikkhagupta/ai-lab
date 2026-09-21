@@ -10,6 +10,8 @@ spring:
         name: banking-mcp-server
         version: 0.0.1
         protocol: STREAMABLE
+        annotation-scanner:
+          enabled: true
   datasource:
     url: jdbc:postgresql://localhost:5432/banking
     username: bankuser
