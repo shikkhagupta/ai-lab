@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "McpServerApplication",
+            "request": "launch",
+            "mainClass": "com.ailearning.aiengineering.mcpserver.McpServerApplication",
+            "projectName": "mcp-server-sdk"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-McpBasicsApplication<mcp-basics>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
