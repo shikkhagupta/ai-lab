@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "McpClientApplication",
+            "request": "launch",
+            "mainClass": "com.ailearning.aiengineering.mcpclient.McpClientApplication",
+            "projectName": "mcp-client-sdk"
+        },
+        {
+            "type": "java",
             "name": "McpServerApplication",
             "request": "launch",
             "mainClass": "com.ailearning.aiengineering.mcpserver.McpServerApplication",
