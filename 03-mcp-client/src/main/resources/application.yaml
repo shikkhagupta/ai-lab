@@ -9,3 +9,5 @@ spring:
           connections:
             server:
               url: http://localhost:8081/
+            server2:
+              url: http://localhost:8082/  

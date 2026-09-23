@@ -1,12 +1,10 @@
 package com.ailearning.aiengineering.mcpclient;
 
 import io.modelcontextprotocol.client.McpSyncClient;
-import io.modelcontextprotocol.spec.McpSchema;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.Map;
 
 @Component
 public class McpToolDiscovery {
@@ -31,21 +29,20 @@ public class McpToolDiscovery {
     }
 
     @PostConstruct
-    public void discoverTools2() {
-        System.out.println(">>> discoverTools2() called");
+    public void discoverTools3() {
+        System.out.println(">>> Number of MCP clients: " + mcpSyncClients.size());
 
-        var client = mcpSyncClients.get(0);
-        var tools = client.listTools();
-        tools.tools().forEach(tool ->
-                System.out.println("Tool: " + tool.name())
-        );
+        for (int i = 0; i < mcpSyncClients.size(); i++) {
+            var client = mcpSyncClients.get(i);
 
-        var request = McpSchema.CallToolRequest.builder("getCustomerProfile")
-                .arguments(Map.of("userId", "user-1001"))
-                .build();
-        var result = client.callTool(request);
+            System.out.println(">>> Client index: " + i);
+            System.out.println(">>> Tools:");
 
-        System.out.println(">>> Tool result: " + result);
-
+            client.listTools()
+                    .tools()
+                    .forEach(tool ->
+                            System.out.println("    " + tool.name())
+                    );
+        }
     }
 }
