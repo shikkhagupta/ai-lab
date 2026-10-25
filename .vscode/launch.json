@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "McpResourceClientApplication",
+            "request": "launch",
+            "mainClass": "com.ailearning.aiengineering.mcpresource.client.McpResourceClientApplication",
+            "projectName": "mcp-resource-client"
+        },
+        {
+            "type": "java",
+            "name": "McpResourceServerApplication",
+            "request": "launch",
+            "mainClass": "com.ailearning.aiengineering.mcpresource.server.McpResourceServerApplication",
+            "projectName": "mcp-resource-server"
+        },
+        {
+            "type": "java",
             "name": "McpClientApplication",
             "request": "launch",
             "mainClass": "com.ailearning.aiengineering.mcpclient.McpClientApplication",
